@@ -27,6 +27,11 @@ public class Diamond {
         }
         System.out.println();
       }
+
+      for (int i = 0; i < diamondSize; i++) {
+        System.out.print(" ");
+      }
+      System.out.print("*");
     } else {
       for (int i = 0; i < diamondSize / 2; i++) {
         for (int j = diamondSize / 2 - i; j > 0; j--) {
