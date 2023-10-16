@@ -18,12 +18,22 @@ public class Diamond {
         }
         System.out.println();
       }
-      for (int i = diamondSize / 2; i > 0 ; i--) {
+      for (int i = diamondSize / 2; i > 0; i--) {
         for (int j = diamondSize - (i * 2); j >= 0; j--) {
           System.out.print(" ");
         }
         for (int j = 0; j < i * 2; j++) {
           System.out.print("* ");
+        }
+        System.out.println();
+      }
+    } else {
+      for (int i = 0; i < diamondSize / 2; i++) {
+        for (int j = diamondSize / 2 - i; j > 0; j--) {
+          System.out.print(" ");
+        }
+        for (int j = 0; j <= i * 2; j++) {
+          System.out.print("*");
         }
         System.out.println();
       }
