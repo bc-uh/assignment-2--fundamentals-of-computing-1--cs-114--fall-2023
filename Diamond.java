@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class Diamond {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a number");
     int diamondSize = scanner.nextInt();
+    scanner.close();
     if (diamondSize % 2 == 0) {
       for (int i = 0; i < diamondSize; i++) {
         System.out.print(" ");
@@ -27,7 +29,6 @@ public class Diamond {
         }
         System.out.println();
       }
-
       for (int i = 0; i < diamondSize; i++) {
         System.out.print(" ");
       }
