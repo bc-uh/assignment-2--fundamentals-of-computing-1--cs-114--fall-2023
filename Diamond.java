@@ -18,6 +18,15 @@ public class Diamond {
         }
         System.out.println();
       }
+      for (int i = diamondSize / 2; i > 0 ; i--) {
+        for (int j = diamondSize - (i * 2); j >= 0; j--) {
+          System.out.print(" ");
+        }
+        for (int j = 0; j < i * 2; j++) {
+          System.out.print("* ");
+        }
+        System.out.println();
+      }
     }
   }
 }
