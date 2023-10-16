@@ -8,7 +8,16 @@ public class Diamond {
       for (int i = 0; i < diamondSize; i++) {
         System.out.print(" ");
       }
-      System.out.print("*");
+      System.out.print("*\n");
+      for (int i = 1; i < diamondSize / 2; i++) {
+        for (int j = diamondSize - (i * 2); j >= 0; j--) {
+          System.out.print(" ");
+        }
+        for (int j = 0; j < i * 2; j++) {
+          System.out.print("* ");
+        }
+        System.out.println();
+      }
     }
   }
 }
